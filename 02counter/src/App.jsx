@@ -17,7 +17,22 @@ function App() {
     // React controls the change in UI
     // React updates through Hooks
     // counter = counter + 1;
-    setCounter(counter + 1);
+
+    // setCounter(counter + 1);
+    
+/*     // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1);
+    // setCounter(counter + 1); */
+    /* Here only one value will be added 
+     react will look in batch and find it that is a repeating value
+     to update multiple times you can do this */
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+
+
   };
 
   const subValue = () => {
