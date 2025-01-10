@@ -14,7 +14,37 @@ import './App.css'
 // There are multiple ways, If-Else statement, ternary operator etc
 
 //-------------------------JSX and Functions -------------------
-//Jsx allows you to create functions dynamically
+//Jsx allows you to create functions dynamically to generate elements or components
+// useful to encapsulate logic in components and use in multiple occasions
+
+
+
+    //------------------- JSX and Functions ------------------------
+    
+    function WelcomeMessage(name) {
+      return <h2>Hello, {name}</h2>;
+    }
+
+    function greeting(isMorning){
+      if(isMorning){
+        return <h3>Good, Morning!</h3>;
+      }else{
+        return <h3>Good, Evening!</h3>;
+      }
+    }
+
+    function alertBox(message) {
+      return <div className='alert'>{message}</div>;
+    }
+
+    function showAlert(condition, message) {
+      if (condition) {
+        // return <div>{alertBox(message)}</div>;
+        return alertBox(message)
+      }else {
+        return null;
+      }
+    }
 
 function App() {
     
@@ -62,10 +92,23 @@ function App() {
     </>
   ) */
 
-  
+      //------------------- JSX and Functions ------------------------
+
+      const now = new Date();
+      const isMorning = now.getHours() < 12 ;
+
   return (
     <div>
-   
+      <h1>Hello, Alles!</h1>
+      {/* <h2>Hallo, Zusamen</h2> */}
+      {WelcomeMessage("Menschen")}
+      {WelcomeMessage("Zusamen")}
+      {WelcomeMessage("Leute")}
+
+      {greeting(isMorning)}
+
+      {showAlert(true, "This is important Message!!")}
+
     </div>
   )
 
