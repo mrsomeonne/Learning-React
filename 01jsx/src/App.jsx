@@ -96,6 +96,11 @@ function App() {
 
       const now = new Date();
       const isMorning = now.getHours() < 12 ;
+      //----------------- comments in JS -----------------
+      // This is a comment
+      /* This
+        IS
+        A Comment */
 
   return (
     <div>
@@ -108,6 +113,12 @@ function App() {
       {greeting(isMorning)}
 
       {showAlert(true, "This is important Message!!")}
+
+    {/* This is a comment in JSX */}
+    
+    {/* This is 
+      a multiline comment
+      in JSX */}
 
     </div>
   )
