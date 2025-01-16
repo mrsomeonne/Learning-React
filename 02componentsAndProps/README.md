@@ -1,0 +1,11 @@
+# Components and Props in React
+- Introduction  to Components and Creating your First   Component
+- Going Hands on With Components
+- Props what are they?
+- Multiple Props
+-  Managing Boolean values and ProtoTypes
+- Destructuring of Props
+- Props Validation using PropTypes in React
+- Props and Arrays
+- Setting up callbacks
+- Props and Spread Syntax
